@@ -1,18 +1,27 @@
 {"P001":{
     "name": "john doe",
-    "age":30
+    "age":30,
+    "weight": 70.5,
+    "height":"1inch"
+    
 },"P002":{
     "name": "jow smith",
-    "age":23
+    "age":23,
+    "weight": 70.5,
+    "height":"1inch"
 },"P003":{
     "name": "jane foe",
     "age":28
 },"P004":{
     "name": "bravo foe",
-    "age":28
+    "age":28,
+    "weight": 70.5,
+    "height":"1inch"
 },"P005":{
     "name": "marryoe",
-    "age":29
+    "age":29,
+    "weight": 70.5,
+    "height":"1inch"
 }
 
 
