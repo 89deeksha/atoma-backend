@@ -174,10 +174,14 @@ def update_patient(patient_id:str,patient_update:update_Patient ):
     for key, value in patient_update_dict.items():
         # changing key with new value
         existing_patient [key]=value
+        existing_patient[key]=patient_id
+        patient_pydantic_object= patient(**existing_patient)
+        existing_patient= patient_pydantic_object.model_dump(exclude=id)
         # now we will merge all data into dictionary
         # existing_patient-->convert in to object, bmi+verdict--->pydanticobject--->dict
         data[patient_id]=existing_patient
-
+        save_data(data)
+        return JSONResponse(status_code=200,content={"messsage":"patient updated successfully"})
 
 
 
